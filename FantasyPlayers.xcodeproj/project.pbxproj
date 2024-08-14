@@ -26,6 +26,7 @@
 		D27235CE2C6085180043DE56 /* Matchups.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235CD2C6085180043DE56 /* Matchups.swift */; };
 		D27235D02C61E7430043DE56 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235CF2C61E7430043DE56 /* Points.swift */; };
 		D27235D22C63266A0043DE56 /* RosterID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235D12C63266A0043DE56 /* RosterID.swift */; };
+		D27236162C6D617F0043DE56 /* MatchupID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27236152C6D617F0043DE56 /* MatchupID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +65,12 @@
 		D27235BB2C52A10D0043DE56 /* SleeperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeperError.swift; sourceTree = "<group>"; };
 		D27235BF2C534BDE0043DE56 /* Leagues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leagues.swift; sourceTree = "<group>"; };
 		D27235C12C5866C90043DE56 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
-		D27235C72C5D94570043DE56 /* MatchupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupsViewController.swift; sourceTree = "<group>"; };
+		D27235C72C5D94570043DE56 /* MatchupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchupsViewController.swift; path = ../MatchupsViewController.swift; sourceTree = "<group>"; };
 		D27235C82C5D94570043DE56 /* Matchups.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Matchups.xib; sourceTree = "<group>"; };
 		D27235CD2C6085180043DE56 /* Matchups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchups.swift; sourceTree = "<group>"; };
 		D27235CF2C61E7430043DE56 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
 		D27235D12C63266A0043DE56 /* RosterID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterID.swift; sourceTree = "<group>"; };
+		D27236152C6D617F0043DE56 /* MatchupID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,6 @@
 		D27235792C51B5340043DE56 = {
 			isa = PBXGroup;
 			children = (
-				D27235D12C63266A0043DE56 /* RosterID.swift */,
-				D27235CF2C61E7430043DE56 /* Points.swift */,
-				D27235CD2C6085180043DE56 /* Matchups.swift */,
-				D27235C72C5D94570043DE56 /* MatchupsViewController.swift */,
-				D27235C82C5D94570043DE56 /* Matchups.xib */,
 				D27235842C51B5340043DE56 /* FantasyPlayers */,
 				D272359B2C51B5350043DE56 /* FantasyPlayersTests */,
 				D27235A52C51B5350043DE56 /* FantasyPlayersUITests */,
@@ -124,6 +121,11 @@
 		D27235842C51B5340043DE56 /* FantasyPlayers */ = {
 			isa = PBXGroup;
 			children = (
+				D27235D12C63266A0043DE56 /* RosterID.swift */,
+				D27235CF2C61E7430043DE56 /* Points.swift */,
+				D27235CD2C6085180043DE56 /* Matchups.swift */,
+				D27235C72C5D94570043DE56 /* MatchupsViewController.swift */,
+				D27235C82C5D94570043DE56 /* Matchups.xib */,
 				D27235852C51B5340043DE56 /* AppDelegate.swift */,
 				D27235872C51B5340043DE56 /* SceneDelegate.swift */,
 				D27235892C51B5340043DE56 /* HomeViewController.swift */,
@@ -136,6 +138,7 @@
 				D27235902C51B5350043DE56 /* LaunchScreen.storyboard */,
 				D27235932C51B5350043DE56 /* Info.plist */,
 				D27235C12C5866C90043DE56 /* K.swift */,
+				D27236152C6D617F0043DE56 /* MatchupID.swift */,
 			);
 			path = FantasyPlayers;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				D27235862C51B5340043DE56 /* AppDelegate.swift in Sources */,
 				D27235C02C534BDE0043DE56 /* Leagues.swift in Sources */,
 				D27235CE2C6085180043DE56 /* Matchups.swift in Sources */,
+				D27236162C6D617F0043DE56 /* MatchupID.swift in Sources */,
 				D27235D22C63266A0043DE56 /* RosterID.swift in Sources */,
 				D27235BC2C52A10D0043DE56 /* SleeperError.swift in Sources */,
 				D27235D02C61E7430043DE56 /* Points.swift in Sources */,

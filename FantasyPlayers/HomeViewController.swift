@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     
     var leagues: [Leagues] = []
     var roster_ID: [RosterID] = []
+    var matchupID: [MatchupID] = []
     var loading = true
     var rosterIDDict: [String: Int] = [:]
     
@@ -28,17 +29,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        
-    
-        
-        
+       
     }
-    
-    
-    
- 
-    
-    
     
         //finds the user
     func getUser() async throws -> User{
@@ -74,12 +66,6 @@ class HomeViewController: UIViewController {
             throw SleeperError.invalidData
             
         }
-        
-        
-        
-        //"https://api.sleeper.app/v1/user/<user_id>/leagues/nfl/2018
-        //https://api.sleeper.app/v1/user/user_id/leagues/nfl/2024
-        // ask for username to get user id
         
     }
     
@@ -134,84 +120,38 @@ class HomeViewController: UIViewController {
                     self.tableView.reloadData()
                 }
                 
-                //                let startTwo = DispatchTime.now()
-                //                for league in leagues {
-                //                    let rosterID = try await getRosterID(leagueID: league.league_id!)
-                //                    for roster in rosterID {
-                //                        if user.user_id == roster.owner_id {
-                //                            print("Roster ID: \(String(describing: roster.roster_id))")
-                //                        }
-                //                    }
-                //                }
-                //                let endTwo = DispatchTime.now()
-                //                let start = DispatchTime.now()
-                //                await withThrowingTaskGroup(of: [RosterID].self) { group in
-                //                    do {
-                //                        for league in leagues {
-                //                            group.addTask {
-                //
-                //                                return try await self.getRosterID(leagueID: league.league_id!)
-                //                            }
-                //                            for try await x in group {
-                //                                for roster in x {
-                //                                    if user.user_id == roster.owner_id {
-                //                                        print("Roster ID: \(String(describing: roster.roster_id))")
-                //
-                //
-                //                                    }
-                //                                }
-                //
-                //                            }
-                //
-                //                        }
-                
-                //                        let end = DispatchTime.now()
-                
-                
                 
                 let startThree = DispatchTime.now()
-                var count = 0
                 for league in leagues {
                     print(leagues.count)
                     print(league.league_id!)
-                    count = count + 1
+         
                     async let rosterID = self.getRosterID(leagueID: league.league_id!)
+                    
+                    
+                    let matchupID = try await self.getMatchupID(leagueID: league.league_id!)
+
+                    for matchup in matchupID {
+                        print(matchup) // print each matchup individually
+                    }
+
                     
                     for roster in try await rosterID {
                         if user.user_id == roster.owner_id {
                             
-                            print("Roster ID: \(String(describing: roster.roster_id)) \(count)")
+//                            print("Roster ID: \(String(describing: roster.roster_id))
                             //holds the key value pair of league id and the
                             rosterIDDict[roster.league_id!] = roster.roster_id
                         }
                     }
+                    
                 }
-                print(rosterIDDict)
-                print(rosterIDDict.count)
+                
+//                print(rosterIDDict)
+//                print(rosterIDDict.count)
                 let endThree = DispatchTime.now()
                 let equationAnswer = (Double(endThree.uptimeNanoseconds)/1000000000.0) - (Double(startThree.uptimeNanoseconds)/1000000000.0)
                 timeTaken.text = String(equationAnswer)
-                //                        print("this is the one with Dylan + \((Double(end.uptimeNanoseconds)/1000000000.0) - (Double(start.uptimeNanoseconds)/1000000000.0))")
-                //                        print("this is the very first one ever done + \((Double(endTwo.uptimeNanoseconds)/1000000000.0) - (Double(startTwo.uptimeNanoseconds)/1000000000.0))")
-                
-                //                    } catch {
-                //                        print (error)
-                //                    }
-                //                }
-                
-                
-                //                for league in leagues {
-                //                    let rosterID = try await getRosterID(leagueID: league.league_id!)
-                //                    for roster in rosterID {
-                //                        if user.user_id == roster.owner_id {
-                //                            print("Roster ID: \(String(describing: roster.roster_id))")
-                //                            break
-                //                        }
-                //                    }
-                //                }
-                
-                
-                
                 
                 
                 
@@ -227,8 +167,6 @@ class HomeViewController: UIViewController {
       
         
     }
-    
-    
     
     func getRosterID(leagueID: String) async throws -> [RosterID]{
         var endpoint = "https://api.sleeper.app/v1/league/"
@@ -255,6 +193,36 @@ class HomeViewController: UIViewController {
             
         }
     }
+    
+    //matchup id call
+    func getMatchupID(leagueID: String) async throws -> [MatchupID] {
+        var endpoint = "https://api.sleeper.app/v1/league/"
+        endpoint.append("\(leagueID)" + "/matchups/1")
+        
+        guard let url = URL(string: endpoint) else {
+            throw SleeperError.invalidURL
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw SleeperError.invalidResponse
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            return try decoder.decode([MatchupID].self, from: data)
+            
+            
+        }catch{
+            throw SleeperError.invalidData
+            
+        }
+        
+        
+    }
+    
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
