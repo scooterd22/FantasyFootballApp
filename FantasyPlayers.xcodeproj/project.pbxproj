@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D27235862C51B5340043DE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235852C51B5340043DE56 /* AppDelegate.swift */; };
+		D27235882C51B5340043DE56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235872C51B5340043DE56 /* SceneDelegate.swift */; };
+		D272358A2C51B5340043DE56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235892C51B5340043DE56 /* HomeViewController.swift */; };
+		D272358D2C51B5340043DE56 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D272358C2C51B5340043DE56 /* Base */; };
+		D272358F2C51B5350043DE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D272358E2C51B5350043DE56 /* Assets.xcassets */; };
+		D27235922C51B5350043DE56 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D27235912C51B5350043DE56 /* Base */; };
+		D272359D2C51B5350043DE56 /* FantasyPlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D272359C2C51B5350043DE56 /* FantasyPlayersTests.swift */; };
+		D27235A72C51B5350043DE56 /* FantasyPlayersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235A62C51B5350043DE56 /* FantasyPlayersUITests.swift */; };
+		D27235A92C51B5350043DE56 /* FantasyPlayersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235A82C51B5350043DE56 /* FantasyPlayersUITestsLaunchTests.swift */; };
+		D27235B62C51C31C0043DE56 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235B52C51C31B0043DE56 /* Player.swift */; };
+		D27235BA2C529D5B0043DE56 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235B92C529D5B0043DE56 /* User.swift */; };
+		D27235BC2C52A10D0043DE56 /* SleeperError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235BB2C52A10D0043DE56 /* SleeperError.swift */; };
+		D27235C02C534BDE0043DE56 /* Leagues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235BF2C534BDE0043DE56 /* Leagues.swift */; };
+		D27235C22C5866C90043DE56 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235C12C5866C90043DE56 /* K.swift */; };
+		D27235C92C5D94570043DE56 /* MatchupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235C72C5D94570043DE56 /* MatchupsViewController.swift */; };
+		D27235CA2C5D94570043DE56 /* Matchups.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27235C82C5D94570043DE56 /* Matchups.xib */; };
+		D27235CE2C6085180043DE56 /* Matchups.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235CD2C6085180043DE56 /* Matchups.swift */; };
+		D27235D02C61E7430043DE56 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235CF2C61E7430043DE56 /* Points.swift */; };
+		D27235D22C63266A0043DE56 /* RosterID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235D12C63266A0043DE56 /* RosterID.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D27235992C51B5350043DE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D272357A2C51B5340043DE56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27235812C51B5340043DE56;
+			remoteInfo = FantasyPlayers;
+		};
+		D27235A32C51B5350043DE56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D272357A2C51B5340043DE56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27235812C51B5340043DE56;
+			remoteInfo = FantasyPlayers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D27235822C51B5340043DE56 /* FantasyPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27235852C51B5340043DE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D27235872C51B5340043DE56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D27235892C51B5340043DE56 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D272358C2C51B5340043DE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D272358E2C51B5350043DE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D27235912C51B5350043DE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D27235932C51B5350043DE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27235982C51B5350043DE56 /* FantasyPlayersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasyPlayersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D272359C2C51B5350043DE56 /* FantasyPlayersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyPlayersTests.swift; sourceTree = "<group>"; };
+		D27235A22C51B5350043DE56 /* FantasyPlayersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasyPlayersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27235A62C51B5350043DE56 /* FantasyPlayersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyPlayersUITests.swift; sourceTree = "<group>"; };
+		D27235A82C51B5350043DE56 /* FantasyPlayersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FantasyPlayersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D27235B52C51C31B0043DE56 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		D27235B92C529D5B0043DE56 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D27235BB2C52A10D0043DE56 /* SleeperError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleeperError.swift; sourceTree = "<group>"; };
+		D27235BF2C534BDE0043DE56 /* Leagues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leagues.swift; sourceTree = "<group>"; };
+		D27235C12C5866C90043DE56 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		D27235C72C5D94570043DE56 /* MatchupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupsViewController.swift; sourceTree = "<group>"; };
+		D27235C82C5D94570043DE56 /* Matchups.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Matchups.xib; sourceTree = "<group>"; };
+		D27235CD2C6085180043DE56 /* Matchups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchups.swift; sourceTree = "<group>"; };
+		D27235CF2C61E7430043DE56 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
+		D27235D12C63266A0043DE56 /* RosterID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterID.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D272357F2C51B5340043DE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27235952C51B5350043DE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D272359F2C51B5350043DE56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D27235792C51B5340043DE56 = {
+			isa = PBXGroup;
+			children = (
+				D27235D12C63266A0043DE56 /* RosterID.swift */,
+				D27235CF2C61E7430043DE56 /* Points.swift */,
+				D27235CD2C6085180043DE56 /* Matchups.swift */,
+				D27235C72C5D94570043DE56 /* MatchupsViewController.swift */,
+				D27235C82C5D94570043DE56 /* Matchups.xib */,
+				D27235842C51B5340043DE56 /* FantasyPlayers */,
+				D272359B2C51B5350043DE56 /* FantasyPlayersTests */,
+				D27235A52C51B5350043DE56 /* FantasyPlayersUITests */,
+				D27235832C51B5340043DE56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D27235832C51B5340043DE56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D27235822C51B5340043DE56 /* FantasyPlayers.app */,
+				D27235982C51B5350043DE56 /* FantasyPlayersTests.xctest */,
+				D27235A22C51B5350043DE56 /* FantasyPlayersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D27235842C51B5340043DE56 /* FantasyPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				D27235852C51B5340043DE56 /* AppDelegate.swift */,
+				D27235872C51B5340043DE56 /* SceneDelegate.swift */,
+				D27235892C51B5340043DE56 /* HomeViewController.swift */,
+				D27235BF2C534BDE0043DE56 /* Leagues.swift */,
+				D27235BB2C52A10D0043DE56 /* SleeperError.swift */,
+				D27235B52C51C31B0043DE56 /* Player.swift */,
+				D27235B92C529D5B0043DE56 /* User.swift */,
+				D272358B2C51B5340043DE56 /* Main.storyboard */,
+				D272358E2C51B5350043DE56 /* Assets.xcassets */,
+				D27235902C51B5350043DE56 /* LaunchScreen.storyboard */,
+				D27235932C51B5350043DE56 /* Info.plist */,
+				D27235C12C5866C90043DE56 /* K.swift */,
+			);
+			path = FantasyPlayers;
+			sourceTree = "<group>";
+		};
+		D272359B2C51B5350043DE56 /* FantasyPlayersTests */ = {
+			isa = PBXGroup;
+			children = (
+				D272359C2C51B5350043DE56 /* FantasyPlayersTests.swift */,
+			);
+			path = FantasyPlayersTests;
+			sourceTree = "<group>";
+		};
+		D27235A52C51B5350043DE56 /* FantasyPlayersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D27235A62C51B5350043DE56 /* FantasyPlayersUITests.swift */,
+				D27235A82C51B5350043DE56 /* FantasyPlayersUITestsLaunchTests.swift */,
+			);
+			path = FantasyPlayersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D27235812C51B5340043DE56 /* FantasyPlayers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27235AC2C51B5350043DE56 /* Build configuration list for PBXNativeTarget "FantasyPlayers" */;
+			buildPhases = (
+				D272357E2C51B5340043DE56 /* Sources */,
+				D272357F2C51B5340043DE56 /* Frameworks */,
+				D27235802C51B5340043DE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FantasyPlayers;
+			productName = FantasyPlayers;
+			productReference = D27235822C51B5340043DE56 /* FantasyPlayers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D27235972C51B5350043DE56 /* FantasyPlayersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27235AF2C51B5350043DE56 /* Build configuration list for PBXNativeTarget "FantasyPlayersTests" */;
+			buildPhases = (
+				D27235942C51B5350043DE56 /* Sources */,
+				D27235952C51B5350043DE56 /* Frameworks */,
+				D27235962C51B5350043DE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D272359A2C51B5350043DE56 /* PBXTargetDependency */,
+			);
+			name = FantasyPlayersTests;
+			productName = FantasyPlayersTests;
+			productReference = D27235982C51B5350043DE56 /* FantasyPlayersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D27235A12C51B5350043DE56 /* FantasyPlayersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27235B22C51B5350043DE56 /* Build configuration list for PBXNativeTarget "FantasyPlayersUITests" */;
+			buildPhases = (
+				D272359E2C51B5350043DE56 /* Sources */,
+				D272359F2C51B5350043DE56 /* Frameworks */,
+				D27235A02C51B5350043DE56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27235A42C51B5350043DE56 /* PBXTargetDependency */,
+			);
+			name = FantasyPlayersUITests;
+			productName = FantasyPlayersUITests;
+			productReference = D27235A22C51B5350043DE56 /* FantasyPlayersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D272357A2C51B5340043DE56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D27235812C51B5340043DE56 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					D27235972C51B5350043DE56 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D27235812C51B5340043DE56;
+					};
+					D27235A12C51B5350043DE56 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = D27235812C51B5340043DE56;
+					};
+				};
+			};
+			buildConfigurationList = D272357D2C51B5340043DE56 /* Build configuration list for PBXProject "FantasyPlayers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D27235792C51B5340043DE56;
+			productRefGroup = D27235832C51B5340043DE56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D27235812C51B5340043DE56 /* FantasyPlayers */,
+				D27235972C51B5350043DE56 /* FantasyPlayersTests */,
+				D27235A12C51B5350043DE56 /* FantasyPlayersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D27235802C51B5340043DE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D272358F2C51B5350043DE56 /* Assets.xcassets in Resources */,
+				D27235922C51B5350043DE56 /* Base in Resources */,
+				D272358D2C51B5340043DE56 /* Base in Resources */,
+				D27235CA2C5D94570043DE56 /* Matchups.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27235962C51B5350043DE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27235A02C51B5350043DE56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D272357E2C51B5340043DE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27235B62C51C31C0043DE56 /* Player.swift in Sources */,
+				D272358A2C51B5340043DE56 /* HomeViewController.swift in Sources */,
+				D27235862C51B5340043DE56 /* AppDelegate.swift in Sources */,
+				D27235C02C534BDE0043DE56 /* Leagues.swift in Sources */,
+				D27235CE2C6085180043DE56 /* Matchups.swift in Sources */,
+				D27235D22C63266A0043DE56 /* RosterID.swift in Sources */,
+				D27235BC2C52A10D0043DE56 /* SleeperError.swift in Sources */,
+				D27235D02C61E7430043DE56 /* Points.swift in Sources */,
+				D27235C22C5866C90043DE56 /* K.swift in Sources */,
+				D27235BA2C529D5B0043DE56 /* User.swift in Sources */,
+				D27235882C51B5340043DE56 /* SceneDelegate.swift in Sources */,
+				D27235C92C5D94570043DE56 /* MatchupsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27235942C51B5350043DE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D272359D2C51B5350043DE56 /* FantasyPlayersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D272359E2C51B5350043DE56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27235A92C51B5350043DE56 /* FantasyPlayersUITestsLaunchTests.swift in Sources */,
+				D27235A72C51B5350043DE56 /* FantasyPlayersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D272359A2C51B5350043DE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27235812C51B5340043DE56 /* FantasyPlayers */;
+			targetProxy = D27235992C51B5350043DE56 /* PBXContainerItemProxy */;
+		};
+		D27235A42C51B5350043DE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27235812C51B5340043DE56 /* FantasyPlayers */;
+			targetProxy = D27235A32C51B5350043DE56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D272358B2C51B5340043DE56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D272358C2C51B5340043DE56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D27235902C51B5350043DE56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D27235912C51B5350043DE56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D27235AA2C51B5350043DE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D27235AB2C51B5350043DE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D27235AD2C51B5350043DE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y3UR368ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FantasyPlayers/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FantasyPlayers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D27235AE2C51B5350043DE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y3UR368ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FantasyPlayers/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FantasyPlayers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D27235B02C51B5350043DE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y3UR368ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FantasyPlayersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasyPlayers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FantasyPlayers";
+			};
+			name = Debug;
+		};
+		D27235B12C51B5350043DE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y3UR368ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FantasyPlayersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FantasyPlayers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FantasyPlayers";
+			};
+			name = Release;
+		};
+		D27235B32C51B5350043DE56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y3UR368ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FantasyPlayersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FantasyPlayers;
+			};
+			name = Debug;
+		};
+		D27235B42C51B5350043DE56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Y3UR368ZX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FantasyPlayersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FantasyPlayers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D272357D2C51B5340043DE56 /* Build configuration list for PBXProject "FantasyPlayers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27235AA2C51B5350043DE56 /* Debug */,
+				D27235AB2C51B5350043DE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27235AC2C51B5350043DE56 /* Build configuration list for PBXNativeTarget "FantasyPlayers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27235AD2C51B5350043DE56 /* Debug */,
+				D27235AE2C51B5350043DE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27235AF2C51B5350043DE56 /* Build configuration list for PBXNativeTarget "FantasyPlayersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27235B02C51B5350043DE56 /* Debug */,
+				D27235B12C51B5350043DE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27235B22C51B5350043DE56 /* Build configuration list for PBXNativeTarget "FantasyPlayersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27235B32C51B5350043DE56 /* Debug */,
+				D27235B42C51B5350043DE56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D272357A2C51B5340043DE56 /* Project object */;
+}
