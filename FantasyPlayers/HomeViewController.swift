@@ -171,6 +171,7 @@ class HomeViewController: UIViewController {
     func getRosterID(leagueID: String) async throws -> [RosterID]{
         var endpoint = "https://api.sleeper.app/v1/league/"
         endpoint.append("\(leagueID)"  + "/rosters")
+        
 //        print(endpoint)
         
         guard let url = URL(string: endpoint) else {
@@ -254,7 +255,3 @@ extension HomeViewController: UITableViewDataSource{
 }
 
 
-
-//                    let rosterID = try await getRosterID(leagueID: league.league_id!)
-//                    for roster in rosterID {
-//                        print("Roster ID: \(String(describing: rosterID.roster_id))")

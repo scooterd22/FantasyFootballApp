@@ -27,6 +27,7 @@
 		D27235D02C61E7430043DE56 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235CF2C61E7430043DE56 /* Points.swift */; };
 		D27235D22C63266A0043DE56 /* RosterID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27235D12C63266A0043DE56 /* RosterID.swift */; };
 		D27236162C6D617F0043DE56 /* MatchupID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27236152C6D617F0043DE56 /* MatchupID.swift */; };
+		D27236182C6D7A8E0043DE56 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27236172C6D7A8E0043DE56 /* LeagueModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		D27235CF2C61E7430043DE56 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
 		D27235D12C63266A0043DE56 /* RosterID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterID.swift; sourceTree = "<group>"; };
 		D27236152C6D617F0043DE56 /* MatchupID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchupID.swift; sourceTree = "<group>"; };
+		D27236172C6D7A8E0043DE56 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				D27235932C51B5350043DE56 /* Info.plist */,
 				D27235C12C5866C90043DE56 /* K.swift */,
 				D27236152C6D617F0043DE56 /* MatchupID.swift */,
+				D27236172C6D7A8E0043DE56 /* LeagueModel.swift */,
 			);
 			path = FantasyPlayers;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				D27235C22C5866C90043DE56 /* K.swift in Sources */,
 				D27235BA2C529D5B0043DE56 /* User.swift in Sources */,
 				D27235882C51B5340043DE56 /* SceneDelegate.swift in Sources */,
+				D27236182C6D7A8E0043DE56 /* LeagueModel.swift in Sources */,
 				D27235C92C5D94570043DE56 /* MatchupsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
