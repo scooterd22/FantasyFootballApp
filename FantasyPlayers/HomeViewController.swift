@@ -76,7 +76,6 @@ class HomeViewController: UIViewController {
         endpoint.append(userID)
         endpoint.append("/leagues/nfl/")
         endpoint.append(year.text ?? "2024")
-        print(endpoint)
         
         guard let url = URL(string: endpoint) else {
             throw SleeperError.invalidURL
@@ -106,9 +105,9 @@ class HomeViewController: UIViewController {
         Task {
             do {
                 let user = try await getUser()
-                DispatchQueue.main.async {
-                    self.usernameLabel.text = user.user_id
-                }
+//                DispatchQueue.main.async {
+//                    self.usernameLabel.text = user.user_id
+//                }
                 // here i am getting the league ids to get the roster ids
                 let leagues = try await getRosterNumber(userID: user.user_id!)
                 
