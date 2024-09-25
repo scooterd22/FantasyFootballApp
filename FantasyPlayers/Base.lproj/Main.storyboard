@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3PA-jk-XMP">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,13 +71,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="time taken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzn-Py-JRq">
-                                <rect key="frame" x="52" y="196" width="80" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtF-bx-Y7N">
                                 <rect key="frame" x="164" y="196" width="78" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -92,13 +85,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search User" id="naF-y9-6SD">
-                        <barButtonItem key="rightBarButtonItem" title="Matchups &gt;" id="Ssf-kn-btF">
-                            <connections>
-                                <segue destination="gqF-6m-7id" kind="show" identifier="MatchupSegue" id="tsO-7R-hRl"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Search User" id="naF-y9-6SD"/>
                     <keyCommands>
                         <keyCommand actionName="searchPressed" discoverabilityTitle="test">
                             <string key="input" base64-UTF8="YES">
@@ -109,7 +96,6 @@ DQ
                     <connections>
                         <outlet property="rosterNumber" destination="J9e-Gk-0cU" id="IrI-vd-8Ci"/>
                         <outlet property="tableView" destination="2G6-Pr-0TF" id="8GT-AQ-BSv"/>
-                        <outlet property="timeTaken" destination="uzn-Py-JRq" id="zbx-hi-nSi"/>
                         <outlet property="usernameField" destination="qAy-kP-93j" id="H4h-e1-pyJ"/>
                         <outlet property="usernameLabel" destination="qoj-fx-ALK" id="6a4-il-xR9"/>
                         <outlet property="year" destination="VME-zh-Aex" id="g9h-ZM-6i8"/>
@@ -117,26 +103,7 @@ DQ
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
-        </scene>
-        <!--Matchups View Controller-->
-        <scene sceneID="1r6-il-9mV">
-            <objects>
-                <tableViewController id="gqF-6m-7id" customClass="MatchupsViewController" customModule="FantasyPlayers" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wN3-NO-omf">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <connections>
-                            <outlet property="dataSource" destination="gqF-6m-7id" id="KmR-sy-BDz"/>
-                            <outlet property="delegate" destination="gqF-6m-7id" id="dxH-3Z-yXk"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="kt5-1e-aYo"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ha9-A7-ITI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1755" y="-28"/>
+            <point key="canvasLocation" x="1463" y="-18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nRE-97-thD">

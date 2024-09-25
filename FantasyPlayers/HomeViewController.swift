@@ -30,10 +30,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-       
+        
     }
     
-        //finds the user
+    //finds the user
     func getUser() async throws -> User{
         var endpoint = "https://api.sleeper.app/v1/user/"
         endpoint.append(usernameField.text!)
@@ -121,40 +121,13 @@ class HomeViewController: UIViewController {
                     self.tableView.reloadData()
                 }
                 
-                
                 let startThree = DispatchTime.now()
                 for league in leagues {
-                    print(leagues.count)
-                    print(league.league_id!)
-         
                     async let rosterID = self.getRosterID(leagueID: league.league_id!)
-                    
-                    
-                    let matchupID = try await self.getMatchupID(leagueID: league.league_id!)
-
-                    for matchup in matchupID {
-                        print(matchup) // print each matchup individually
-                    }
-
-                    
-                    for roster in try await rosterID {
-                        if user.user_id == roster.owner_id {
-                            
-//                            print("Roster ID: \(String(describing: roster.roster_id))
-                            //holds the key value pair of league id and the
-                            rosterIDDict[roster.league_id!] = roster.roster_id
-                        }
-                    }
-                    
                 }
                 
-//                print(rosterIDDict)
-//                print(rosterIDDict.count)
                 let endThree = DispatchTime.now()
                 let equationAnswer = (Double(endThree.uptimeNanoseconds)/1000000000.0) - (Double(startThree.uptimeNanoseconds)/1000000000.0)
-                timeTaken.text = String(equationAnswer)
-                
-                
                 
             } catch {
                 // Handle the error here
@@ -165,7 +138,7 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func playerDataPressed(_ sender: Any) {
-      
+        
         
     }
     
@@ -173,7 +146,7 @@ class HomeViewController: UIViewController {
         var endpoint = "https://api.sleeper.app/v1/league/"
         endpoint.append("\(leagueID)"  + "/rosters")
         
-//        print(endpoint)
+        //        print(endpoint)
         
         guard let url = URL(string: endpoint) else {
             throw SleeperError.invalidURL
@@ -239,7 +212,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return leagues.count
+        return leagues.count
         
         
         
@@ -249,7 +222,7 @@ extension HomeViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath)
         cell.textLabel?.text = leagues[indexPath.row].name
         return cell
-     
+        
     }
     
     
