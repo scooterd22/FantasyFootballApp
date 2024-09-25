@@ -3,6 +3,7 @@
 //  FantasyPlayers
 //
 //  Created by Scott DiBenedetto on 7/24/24.
+// this version has a matchup tableview, that only shows league name, it also gets roster id but is slower than I want it to be, let this be a point that I can go back to if I want to add that in!
 //
 
 import UIKit
