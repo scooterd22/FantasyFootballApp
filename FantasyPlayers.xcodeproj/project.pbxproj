@@ -251,6 +251,9 @@
 				Base,
 			);
 			mainGroup = D27235792C51B5340043DE56;
+			packageReferences = (
+				D2C5BEDC2CA5F6EF00DF82EB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = D27235832C51B5340043DE56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -655,6 +658,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2C5BEDC2CA5F6EF00DF82EB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D272357A2C51B5340043DE56 /* Project object */;
 }
