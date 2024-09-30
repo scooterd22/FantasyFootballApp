@@ -196,16 +196,6 @@ class HomeViewController: UIViewController {
         
     }
     
-//    func keyboardWasShown(notification: NSNotification) {
-//        let info = notification.userInfo!
-//        let keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-//
-//        UIView.animateWithDuration(0.1, animations: { () -> Void in
-////            self.bottomConstraint.constant = keyboardFrame.size.height + 20
-//        })
-//    }
-//    
-    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
