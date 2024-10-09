@@ -1,10 +1,10 @@
-platform :ios, '15.0'
+platform :ios, '13.0'
 
 target 'FantasyPlayers' do
   
   use_frameworks!
 
   # Pods for FantasyPlayers
-  pod 'IQKeyboardManager', '7.0.0' 
+  # no pods
 
 end

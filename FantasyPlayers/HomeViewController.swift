@@ -8,9 +8,15 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITextFieldDelegate {
     
     
+    
+    
+    @IBOutlet weak var yearPicker: UIPickerView!
+    @IBOutlet weak var userByYear: UILabel!
+    @IBOutlet weak var searchToYearConstraint: NSLayoutConstraint!
+    @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var timeTaken: UILabel!
     @IBOutlet weak var invalidLabel: UILabel!
     @IBOutlet weak var year: UITextField!
@@ -19,19 +25,88 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var avatarImage: UIImageView!
-    
     var leagues: [Leagues] = []
     var roster_ID: [RosterID] = []
     var matchupID: [MatchupID] = []
     var loading = true
     var rosterIDDict: [String: Int] = [:]
-    
+    var searchedName = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.usernameField.delegate = self
         tableView.dataSource = self
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        guard let userInfo = notification.userInfo,
+              let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        
+        let keyboardFrame = keyboardSize.cgRectValue
+
+        self.view.frame.origin.y = -keyboardFrame.height
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        self.view.frame.origin.y = 0
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        performAction()
+        textField.resignFirstResponder()  //if desired
+       
+        return true
+    }
+
+    func performAction() {
+        Task {
+            do {
+                let user = try await getUser()
+//                DispatchQueue.main.async {
+//                    self.usernameLabel.text = user.user_id
+//                }
+                // here i am getting the league ids to get the roster ids
+                let leagues = try await getRosterNumber(userID: user.user_id!)
+                
+                
+                //update based off what is found
+                DispatchQueue.main.async {
+                    self.leagues = leagues
+                    // ui being updated
+                    self.rosterNumber.text = "Total leagues: \(leagues.count)"
+                    self.tableView.reloadData()
+                }
+                
+                let startThree = DispatchTime.now()
+                for league in leagues {
+                    async let rosterID = self.getRosterID(leagueID: league.league_id!)
+                }
+                
+                let endThree = DispatchTime.now()
+                let equationAnswer = (Double(endThree.uptimeNanoseconds)/1000000000.0) - (Double(startThree.uptimeNanoseconds)/1000000000.0)
+                usernameField.text = ""
+            } catch {
+                // Handle the error here
+                print(error)
+            }
+        }
+        
+        searchedName = usernameField.text ?? "test"
+        userByYear.text = searchedName
+    }
+    
+
     
     //finds the user
     func getUser() async throws -> User{
@@ -101,38 +176,6 @@ class HomeViewController: UIViewController {
     
     @IBAction func searchPressed(_ sender: Any) {
         
-        
-        Task {
-            do {
-                let user = try await getUser()
-//                DispatchQueue.main.async {
-//                    self.usernameLabel.text = user.user_id
-//                }
-                // here i am getting the league ids to get the roster ids
-                let leagues = try await getRosterNumber(userID: user.user_id!)
-                
-                
-                //update based off what is found
-                DispatchQueue.main.async {
-                    self.leagues = leagues
-                    // ui being updated
-                    self.rosterNumber.text = "Total leagues: \(leagues.count)"
-                    self.tableView.reloadData()
-                }
-                
-                let startThree = DispatchTime.now()
-                for league in leagues {
-                    async let rosterID = self.getRosterID(leagueID: league.league_id!)
-                }
-                
-                let endThree = DispatchTime.now()
-                let equationAnswer = (Double(endThree.uptimeNanoseconds)/1000000000.0) - (Double(startThree.uptimeNanoseconds)/1000000000.0)
-                
-            } catch {
-                // Handle the error here
-                print(error)
-            }
-        }
     }
     
     
@@ -219,11 +262,14 @@ extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath)
         cell.textLabel?.text = leagues[indexPath.row].name
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor.black
         return cell
         
     }
     
     
 }
+
 
 
